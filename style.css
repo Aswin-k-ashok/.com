@@ -455,6 +455,9 @@ section .title::after {
         text-align: center;        
         
     }
+    .skills .skills-content .right{
+        width: 100%;
+    }
     .skills .skills-content .column .box{
         padding: 10px;
     }
