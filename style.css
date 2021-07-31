@@ -23,6 +23,19 @@ section {
     padding: 100px 0;
 }
 
+.about, .services, .skills, .project{
+    font-family: 'Poppins',sans-serif;
+}
+
+.about, .about-content,
+.services, .serv-content,
+.skills, .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 section .title {
     position: relative;
     text-align: center;
@@ -336,9 +349,110 @@ section .title::after {
 }
 
 
+/* projects section */
+.project{
+    background: var(--color2);
+    
+}
+.project .title{
+    color: var(--white);
+}
+.project .title::before {
+    color: var(--white);
+    background: var(--white);
+}
 
+.project .title::after {
+    content: "what i made";
+    background: var(--color2);
 
+}
+.project .carousel .card{
+    background: var(--white);
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.project .carousel .card:hover{
+    background: var(--color1);
+    color: var(--white);
 
+}
+.project .carousel .card:hover i{
+    color: var(--white);
+}
+
+.project .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.project .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.project .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.project .carousel .card i{
+    font-size: 100px;
+    color: var(--color1);
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 12px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid var(--color1)!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: var(--color1)!important;
+}
+
+/* contact section styling */
+.contact{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.contact .title::after{
+    content: "keep in touch";
+    
+}
+
+.contact .socioico i{
+    font-size: 100px;
+    margin: 20px;
+}
+
+.contact .socioico .fa-instagram-square:hover{
+    color: purple;
+}
+.contact .socioico .fa-github-square:hover{
+    color: gold;
+}
+.contact .socioico .fa-facebook-square:hover{
+    color: blue;
+}
+.contact .socioico .fa-google:hover{
+    color: brown;
+}
 
 
 
@@ -466,6 +580,10 @@ section .title::after {
         margin: 10px;
         font-size: 47px;
        
+    }
+    .skills .skills-content .right p{
+        font-size: 20px;
+        text-align: center;
     }
 
     
