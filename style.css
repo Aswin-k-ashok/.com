@@ -16,6 +16,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* global styling */
 
@@ -23,7 +26,7 @@ section {
     padding: 100px 0;
 }
 
-.about, .services, .skills, .project{
+.about, .services, .skills, .project,footer{
     font-family: 'Poppins',sans-serif;
 }
 
@@ -439,22 +442,41 @@ section .title::after {
 .contact .socioico i{
     font-size: 100px;
     margin: 20px;
+    transition: all 0.3s ease;
+    
 }
 
-.contact .socioico .fa-instagram-square:hover{
-    color: purple;
+.contact .socioico .fa-instagram-square{
+    color: rgb(131,58,180);
 }
-.contact .socioico .fa-github-square:hover{
-    color: gold;
+.contact .socioico .fa-github-square{
+    color: rgb(33,31,30);
 }
-.contact .socioico .fa-facebook-square:hover{
-    color: blue;
+.contact .socioico .fa-facebook-square{
+    color: rgb(59,85,158);
 }
-.contact .socioico .fa-google:hover{
-    color: brown;
+.contact .socioico .fa-google{
+    color: rgb(53,168,82);
 }
 
+/* footer styling */
 
+footer{
+    background: var(--color2);
+    text-align: center;
+    padding: 20px 23px;
+    color: white;
+
+
+}
+footer span a{
+    color: var(--color1);
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
