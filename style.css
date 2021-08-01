@@ -445,7 +445,9 @@ section .title::after {
     transition: all 0.3s ease;
     
 }
-
+.contact .socioico .fa-linkedin{
+    color:rgb(6,116,176) ;
+}
 .contact .socioico .fa-instagram-square{
     color: rgb(131,58,180);
 }
@@ -608,6 +610,12 @@ footer span a:hover{
         text-align: center;
     }
 
+    .contact .socioico i{
+        font-size: 80px;
+        margin: 20px;
+        transition: all 0.3s ease;
+        
+
     
 }
 
@@ -629,6 +637,11 @@ footer span a:hover{
         margin-bottom: 20px;
     }
 
+    .contact .socioico i{
+        font-size: 50px;
+        margin: 20px;
+        transition: all 0.3s ease;
+        
  
 
 
