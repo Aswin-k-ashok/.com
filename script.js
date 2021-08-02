@@ -12,6 +12,14 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
+    // typing Animation
+    var typed = new Typed(".typing",{
+        strings:["websites","web apps","softwares","pancakes","and other things."],
+        typeSpeed:100,
+        backSpeed:60,
+        loop: true
+    });
+
     // owl carousel script
 
     $('.carousel').owlCarousel({
