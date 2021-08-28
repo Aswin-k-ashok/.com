@@ -44,3 +44,19 @@ $(document).ready(function () {
     });
 });
 
+$("#submit-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbwXeVmwLhtq1AKnCptOBsgljiIrFCW3XMeCAPdbWhsMvaRy030T8QE8cPXO14Bh_jJnRA/exec",
+        data:$("#submit-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Hey there,Thank you for reaching out!…")
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error:function (err){
+            alert("Something Error")
+        }
+    })
+})
