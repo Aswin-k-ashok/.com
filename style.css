@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 :root {
-    --color1:brown;
-    /*primary color-blueviolet*/
-    --color2:black;
-    /*secondory color-gold*/
-    /* rgb(247, 205, 38); */
-    --white: #fff;
-    --black: #111;
+  /* --color1: brown; */
+  --color1: #56a081;
+  /*primary color-blueviolet*/
+  /* --color2: black; */
+  --color2: #353234;
+  /*secondory color-gold*/
+  /* rgb(247, 205, 38); */
+  --white: #fff;
+  --black: #111;
 }
 
 * {
